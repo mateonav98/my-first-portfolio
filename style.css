@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --border_color: rgb(11, 53, 11);
+}
+
+header h1 {
+    display: inline-block;
+}
+header {
+    height: 90px;
+    width: 100%;
+    border: 5px solid var(--border_color);
+    border-radius: 10px;
+    background-color: rgb(94, 146, 94);
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace
+    padding: 10x;
+}
+
+header .nav {
+    display: inline-flex;
+    justify-content: space-evenly;
+    float: inline-end;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+#image-1 {
+    display: inline-flex;
+    width: 25%;
+    height: 25%;
+    margin-top: 20px;
+    border: 5px solid var(--border_color);
+}
+.about_me {
+    display: inline-block;
+    float: right;
+    background-color: rgb(94, 146, 94);
+    margin-top: 20px;
+    width: 73%;
+    height: 25%;
+    border: 5px solid var(--border_color);
+    border-radius: 10px;
+}
+
+.about_me, h2, h3 {
+    margin-left: 5px;
+}
+
+.my_projects, h2 {
+    text-align: center;
+}
+
+.projects {
+    margin-top: 20px;
+    border: 5px solid var(--border_color);
+    border-width: 100%;
+    display: inline;
+}
+section {
+    display: inline-flex;
+}
+#image-2 {
+    width: 80%;
+    height: 10%;
+    float:center;
+}
+#image-3 {
+    width: 50%;
+    height: 20%;
+}
+#image-4 {
+    width: 50%;
+    height: 20%;
+}
+#image-5 {
+    width: 50%;
+    height: 20%;
+}
+#image-6 {
+    width: 50%;
+    height: 20%;
+}
+
+body {
+    background-color: rgb(150, 185, 150);
+}
+.cm-title, .contact-me{
+    text-align: center;
+}
+.contact-me {
+    display: inline-flex;
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(202, 231, 202);

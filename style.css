@@ -21,9 +21,8 @@ header {
 }
 
 header .nav {
-    display: inline-flex;
+    display: inline-block;
     justify-content: space-evenly;
-    float: inline-end;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;;
     padding: 10px;
@@ -56,22 +55,28 @@ header .nav {
     text-align: center;
 }
 
-#projects {
-    margin-top: 20px;
-    background-color: rgb(94, 146, 94);
-}
 section {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    background-color: rgb(94, 146, 94);
-
+    justify-content: space-evenly;
+    margin: 50px 40px 20px 40px;
+    
 }
 
+
+
+section h2 {
+    flex-direction: column;
+    border: 5px solid var(--border_color);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
 section h2 {
     text-align: center;
 }
 #image-2 {
-    width: 1425px;
+    width: 1350px;
     justify-content: center;
     float:center;
     border: 5px solid var(--border_color);
@@ -80,7 +85,7 @@ section h2 {
 #image-2:hover #image-2 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
-    rgb(150, 187, 169);
+    rgb(255, 255, 255);
 }
 #image-3 {
     width: 620px;
@@ -90,7 +95,7 @@ section h2 {
 #image-3:hover #image-3 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
-    rgb(150, 187, 169);
+    rgb(255, 255, 255);
 }
 #image-4 {
     width: 620px;
@@ -100,7 +105,7 @@ section h2 {
 #image-4:hover #image-3 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
-    rgb(150, 187, 169);
+    rgb(255, 255, 255);
 }
 #image-5 {
     width: 620px;
@@ -110,7 +115,7 @@ section h2 {
 #image-5:hover #image-5 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
-    rgb(150, 187, 169);
+    rgb(255, 255, 255);
 }
 #image-6 {
     width: 620px;
@@ -120,7 +125,7 @@ section h2 {
 #image-6:hover #image-6 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
-    rgb(150, 187, 169);
+    rgb(255, 255, 255);
 }
 .project2 {
     display: flex;
@@ -132,6 +137,7 @@ section h2 {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 body {
@@ -153,6 +159,10 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+    header {
+        display: flex;
+        flex: 0 0 50%;
+    }
     body {
         display: flex;
         flex: 0 0 50%;

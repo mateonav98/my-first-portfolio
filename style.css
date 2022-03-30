@@ -32,6 +32,7 @@ header .nav {
 }
 .list {
     display: inline-block;
+    margin-left: 20px;
 }
 
 #image-1 {
@@ -55,34 +56,31 @@ header .nav {
     margin-left: 5px;
 }
 
-.my_projects, h2 {
+h2.my_projects {
     text-align: center;
+    border: 5px solid var(--border_color);
+    background-color: rgb(94, 146, 94);
+    padding: 20px;
 }
 
 section {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px 40px 20px 40px;
-    
+    margin: 20px 40px 20px 40px;
 }
 
 
-
 section h2 {
-    flex-direction: column;
     border: 5px solid var(--border_color);
     padding: 10px;
     border-radius: 10px;
-    
+    margin: -50px 20px 0 20px;
+    background-color: rgb(94, 146, 94);
+    width: 100%;
 }
-section h2 {
-    text-align: center;
-}
+
 #image-2 {
     width: 1350px;
-    justify-content: center;
-    float:center;
     border: 5px solid var(--border_color);
 }
 #image-2:hover,
@@ -131,17 +129,11 @@ section h2 {
     rgb(238, 237, 243), 0 0 15px
     rgb(255, 255, 255);
 }
-.project2 {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 #grid {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 body {
@@ -152,12 +144,12 @@ body {
     text-align: center;
 }
 .contact-me {
-    display: inline-block;
-    flex-wrap: wrap;
+    display: flex;
     position: relative;
     float:middle;
     list-style-type: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 320px;
 }
 
 .footer {

@@ -10,6 +10,7 @@ header h1 {
     display: inline-block;
 }
 header {
+    display: inline-block;
     height: 90px;
     width: 100%;
     border: 5px solid var(--border_color);
@@ -21,13 +22,16 @@ header {
 }
 
 header .nav {
-    display: inline-block;
-    justify-content: space-evenly;
+    display: inline-flex;
+    position: relative;
+    float: right;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;;
     padding: 10px;
     list-style-type: none;
-
+}
+.list {
+    display: inline-block;
 }
 
 #image-1 {
@@ -144,10 +148,14 @@ body {
     background-color: rgb(150, 185, 150);
 }
 #cm-title, .contact-me{
+    display: block;
     text-align: center;
 }
 .contact-me {
-    display: inline-flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    position: relative;
+    float:middle;
     list-style-type: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -163,7 +171,11 @@ body {
         display: flex;
         flex: 0 0 50%;
     }
-    body {
+    .image-2 {
+        display: flex;
+        flex: 0 0 50%;
+      }
+    section {
         display: flex;
         flex: 0 0 50%;
       }

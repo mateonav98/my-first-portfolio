@@ -2,13 +2,12 @@
     box-sizing: border-box;
 }
 
+/* setting color for all borders */
 :root {
     --border_color: rgb(11, 53, 11);
 }
 
-header h1 {
-    display: inline-block;
-}
+/* Displaying header inline, setting color, font, and border */
 header {
     display: inline-block;
     height: 90px;
@@ -21,6 +20,7 @@ header {
     padding: 10x;
 }
 
+/* Setting nav links in header */
 header .nav {
     display: inline-flex;
     position: relative;
@@ -30,11 +30,13 @@ header .nav {
     padding: 10px;
     list-style-type: none;
 }
+/* creating space between nav links */
 .list {
     display: inline-block;
     margin-left: 20px;
 }
 
+/* setting image size and inline */
 #image-1 {
     display: inline-block;
     width: 25%;
@@ -42,6 +44,7 @@ header .nav {
     margin-top: 20px;
     border: 5px solid var(--border_color);
 }
+/* about me section styling and sizing. inline and moving to the right  */
 #about_me {
     display: inline-block;
     float: right;
@@ -52,16 +55,12 @@ header .nav {
     border-radius: 10px;
     position: relative;
 }
-
-#about_me, h2, h3 {
-    margin-left: 5px;
-}
+/* all h2 text centered */
 h2 {
    text-align: center;
 }
-
+/* box around project title*/
 h2.my_projects {
-    text-align: center;
     border: 5px solid var(--border_color);
     background-color: rgb(94, 146, 94);
     padding: 20px;
@@ -69,13 +68,14 @@ h2.my_projects {
     position: relative;
 }
 
+/* wrapping section */
 section {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 20px 40px 20px 40px;
 }
 
-
+/* border styling for image titles */
 section h2 {
     border: 5px solid var(--border_color);
     padding: 10px;
@@ -87,52 +87,62 @@ section h2 {
     flex-wrap: wrap;
 }
 
+/* image sizing and border styling for large image */
 #image-2 {
     width: 1350px;
     border: 5px solid var(--border_color);
     position: relative;
 }
+/* highlighting image */
 #image-2:hover,
 #image-2:hover #image-2 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
     rgb(255, 255, 255);
 }
+/* image sizing and border styling */
 #image-3 {
     width: 620px;
     height: 700px%;
     border: 5px solid var(--border_color);
 }
+/* highlighting image */
 #image-3:hover,
 #image-3:hover #image-3 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
     rgb(255, 255, 255);
 }
+/* image sizing and border styling */
 #image-4 {
     width: 620px;
     border: 5px solid var(--border_color);
 }
+/* highlighting image */
 #image-4:hover,
 #image-4:hover #image-3 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
     rgb(255, 255, 255);
 }
+/* image sizing and border styling */
 #image-5 {
     width: 620px;
     border: 5px solid var(--border_color);
 }
+/* highlighting image */
 #image-5:hover,
 #image-5:hover #image-5 {
     box-shadow: inset 0px 0px 10px
     rgb(238, 237, 243), 0 0 15px
     rgb(255, 255, 255);
 }
+/* image sizing and border styling */
 #image-6 {
     width: 620px;
     border: 5px solid var(--border_color);
 }
+/* highlighting image */
 #image-6:hover,
 #image-6:hover #image-6 {
     box-shadow: inset 0px 0px 10px
@@ -140,34 +150,39 @@ section h2 {
     rgb(255, 255, 255);
 }
 
-
+/* image section in columns */
 #grid {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
+/* background color */
 body {
     background-color: rgb(150, 185, 150);
 }
-#cm-title, .contact-me{
-    display: block;
-    text-align: center;
-}
+
+/* placing contact info inline */
 .contact-me {
     display: flex;
     position: relative;
-    float:middle;
     list-style-type: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 
+/* adding spacing between list */
+.contact-me h3{ 
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* footer styling */
 .footer {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(202, 231, 202); 
 }
 
+/* to adjust for screen sizing */
 @media screen and (max-width: 768px) {
     body {
         display: flex;

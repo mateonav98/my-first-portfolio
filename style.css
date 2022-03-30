@@ -84,6 +84,7 @@ section h2 {
     background-color: rgb(94, 146, 94);
     width: 100%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 #image-2 {
@@ -168,27 +169,45 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
     header {
         display: flex;
-        flex: 1 0 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 100px;
+
+    }
+    .list {
+        display: flex;
     }
     section {
         display: flex;
-        flex: 0 0 50%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
       }
     .about_me {
         display: flex;
-        flex: 1 0 100%;
-        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     #image-2 {
         display: flex;
-        width: 675px;
+        width: 500px;
     }
     #projects {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .footer {
+        flex-wrap: wrap;
         flex-direction: row;
-        flex: 0 0 50%;
     }
 }
 
